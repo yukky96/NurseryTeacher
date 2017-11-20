@@ -45,10 +45,10 @@ Partial Class Form5
         '
         Me.Panel1.AutoScroll = True
         Me.Panel1.Controls.Add(Me.TabControl1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 26)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(930, 400)
+        Me.Panel1.Size = New System.Drawing.Size(1187, 591)
         Me.Panel1.TabIndex = 0
         '
         'TabControl1
@@ -58,7 +58,7 @@ Partial Class Form5
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(915, 539)
+        Me.TabControl1.Size = New System.Drawing.Size(1167, 714)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -67,17 +67,18 @@ Partial Class Form5
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(907, 513)
+        Me.TabPage1.Size = New System.Drawing.Size(1159, 688)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(907, 514)
+        Me.PictureBox1.Size = New System.Drawing.Size(1144, 692)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -87,7 +88,7 @@ Partial Class Form5
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(922, 373)
+        Me.TabPage2.Size = New System.Drawing.Size(1159, 688)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -97,7 +98,7 @@ Partial Class Form5
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ファイルFToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(930, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1187, 26)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -111,7 +112,7 @@ Partial Class Form5
         '上書き保存SToolStripMenuItem
         '
         Me.上書き保存SToolStripMenuItem.Name = "上書き保存SToolStripMenuItem"
-        Me.上書き保存SToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.上書き保存SToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.上書き保存SToolStripMenuItem.Text = "上書き保存(&S)"
         '
         '名前を付けて保存AToolStripMenuItem
@@ -136,10 +137,13 @@ Partial Class Form5
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(930, 426)
+        Me.BackColor = System.Drawing.SystemColors.Window
+        Me.ClientSize = New System.Drawing.Size(1187, 634)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.Panel1.ResumeLayout(False)
