@@ -1,0 +1,25 @@
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\bin\Debug\NurseryTeacher.exe.config
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\bin\Debug\NurseryTeacher.exe
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\bin\Debug\NurseryTeacher.pdb
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\bin\Debug\NurseryTeacher.xml
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.Form1.resources
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.Resources.resources
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.vbproj.GenerateResource.Cache
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.exe
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.xml
+C:\Users\15110025\AppData\Local\Temporary Projects\NurseryTeacher\obj\Debug\NurseryTeacher.pdb
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\NurseryTeacher.exe.config
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.exe
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.xml
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.pdb
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\NurseryTeacher.exe
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\NurseryTeacher.pdb
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\NurseryTeacher.xml
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.Resources.resources
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.vbproj.GenerateResource.Cache
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\ja\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.Login.resources
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.GuidancePlan.resources
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.TeacherEdit.resources
+C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.GuidancePlan2.resources
