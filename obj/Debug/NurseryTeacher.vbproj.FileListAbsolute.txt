@@ -20,7 +20,6 @@ C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTe
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\bin\Debug\ja\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.Login.resources
-C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.GuidancePlan.resources
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.TeacherEdit.resources
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.GuidancePlan2.resources
 C:\Users\15110025\Documents\Visual Studio 2013\Projects\NurseryTeacher\NurseryTeacher\obj\Debug\NurseryTeacher.Form5.resources

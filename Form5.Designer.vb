@@ -36,6 +36,9 @@ Partial Class Form5
         Me.名前を付けて保存AToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.終了XToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -45,6 +48,9 @@ Partial Class Form5
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.ComboBox2)
+        Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TabControl1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -153,6 +159,32 @@ Partial Class Form5
         Me.終了XToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.終了XToolStripMenuItem.Text = "終了(&X)"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(0, 0)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(65, 29)
+        Me.ComboBox1.TabIndex = 3
+        Me.ComboBox1.Text = "平成"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(71, 0)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(65, 29)
+        Me.ComboBox2.TabIndex = 3
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(181, 12)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox1.TabIndex = 4
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -190,4 +222,7 @@ Partial Class Form5
     Friend WithEvents 終了XToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

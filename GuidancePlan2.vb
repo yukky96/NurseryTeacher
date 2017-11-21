@@ -64,7 +64,7 @@
     End Sub
 
     Private Sub TextMen_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextMen.KeyPress
-        '�����ꂽ�L�[���u0�`9�łȂ��ꍇ�v���uBackSpace�łȂ��ꍇ�v�C�x���g���L�����Z������
+        '�����ꂽ�L�[���u0�`9�łȂ��ꍇ�v��� uBackSpace�łȂ��ꍇ�v�C�x���g���L�����Z������
         If (e.KeyChar < "0"c Or e.KeyChar > "9"c) And e.KeyChar <> vbBack Then
             e.Handled = True
         End If
@@ -73,7 +73,7 @@
     End Sub
 
     Private Sub TextWomen_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextWomen.KeyPress
-        '�����ꂽ�L�[���u0�`9�łȂ��ꍇ�v���uBackSpace�łȂ��ꍇ�v�C�x���g���L�����Z������
+        '�����ꂽ�L�[���u0�`9�łȂ��ꍇ�v��� uBackSpace�łȂ��ꍇ�v�C�x���g���L�����Z������
         If (e.KeyChar < "0"c Or e.KeyChar > "9"c) And e.KeyChar <> vbBack Then
             e.Handled = True
         End If
@@ -459,5 +459,110 @@
     Private Sub GuidancePlan2_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.Panel.Location = New Point(0, -30)
         Me.Panel.Anchor = AnchorStyles.Top
+
+        Focus1.SelectionAlignment = HorizontalAlignment.Center
     End Sub
+
+
+    Private Sub ASave_Click(sender As Object, e As EventArgs) Handles ASave.Click
+
+
+        Dim sqlString As String = Input_day_main()
+        Dim sqlConnect As New SQLConnectClass
+
+        If sqlConnect.DBConnect(sqlString) = False Then
+            MsgBox(sqlConnect.ErrorMessage)
+        Else
+
+            sqlConnect.DBConnect("SELECT MAX(day_main_id) FROM child_dayplan_main;")
+            Dim ds As DataSet = sqlConnect.DBResult()
+            Dim dt As DataTable = ds.Tables.Item(0)
+            Dim mainID As String = dt.Rows(0).Item(0)
+            For i = 0 To 13
+                Dim s As String = Input_day_table(i, mainID)
+                If sqlConnect.DBConnect(s) = False Then
+                    MsgBox(s)
+                    MsgBox(sqlConnect.ErrorMessage)
+                End If
+            Next
+        End If
+        MsgBox("保存完了!!", MsgBoxStyle.OkOnly, "確認画面")
+    End Sub
+
+    '読解性上昇のために作成した関数
+    Private Function Input_day_main() As String
+        Dim sqlString As String
+
+        sqlString = "INSERT INTO " _
+                    & "`child_dayplan_main`" _
+                    & "(" _
+                        & "`ClassName`, `BoysNumber`, `GirlsNumber`," _
+                        & "`CreatedDate`, `TargetDate`, `LeaderName`," _
+                        & "`AimNursing`, `AimEducation`, `Contents`," _
+                        & "`EvaluationReflection`, `UpdateDate`" _
+                    & ")" _
+                    & "VALUES (" _
+                               & "'" & ClassName.Text & "'" _
+                        & ", " & "'" & TextMen.Text & "'" _
+                        & ", " & "'" & TextWomen.Text & "'" _
+                        & ", NOW()" _
+                        & ", " & "'" & TargetDate.Value & "'" _
+                        & ", " & "'" & LeaderName.Text & "'" _
+                        & ", " & "'" & Nursing.Text & "'" _
+                        & ", " & "'" & Education.Text & "'" _
+                        & ", " & "'" & Content.Text & "'" _
+                        & ", " & "'" & Reflection.Text & "'" _
+                        & ", NOW()" _
+                    & ");"
+        Return sqlString
+    End Function
+
+    Private Function Input_day_table(i As Integer, main_id As String) As String
+        Dim sqlString As String
+        Dim time = New TextBox() {
+            Time1, Time2, Time3, Time4, Time5, _
+            Time6, Time7, Time8, Time9, Time10, _
+            Time11, Time12, Time13, Time14
+            }
+        Dim Action = New RichTextBox() {
+            Action1, Action2, Action3, Action4, Action5, _
+            Action6, Action7, Action8, Action9, Action10, _
+            Action11, Action12, Action13, Action14
+            }
+        Dim Environment = New RichTextBox() {
+            Environment1, Environment2, Environment3, Environment4, Environment5, _
+            Environment6, Environment7, Environment8, Environment9, Environment10, _
+            Environment11, Environment12, Environment13, Environment14
+            }
+        Dim Concern = New RichTextBox() {
+            Concern1, Concern2, Concern3, Concern4, Concern5, _
+            Concern6, Concern7, Concern8, Concern9, Concern10, _
+            Concern11, Concern12, Concern13, Concern14
+            }
+        Dim Note = New RichTextBox() {
+            Note1, Note2, Note3, Note4, Note5, _
+            Note6, Note7, Note8, Note9, Note10, _
+            Note11, Note12, Note13, Note14
+            }
+        sqlString = "INSERT INTO " _
+                    & "`child_dayplan_table`" _
+                    & "(" _
+                        & "`day_main_id`," _
+                        & "`TimesDay`," _
+                        & "`ExpectedChild`," _
+                        & "`EnvironmentalComposition`," _
+                        & "`Concern`," _
+                        & "`Notices`" _
+                    & ")" _
+                    & " VALUES (" _
+                        & " " & main_id & "," _
+                        & "'" & time(i).Text & "'," _
+                        & "'" & Action(i).Text & "'," _
+                        & "'" & Environment(i).Text & "'," _
+                        & "'" & Concern(i).Text & "'," _
+                        & "'" & Note(i).Text & "'" _
+                    & ");"
+
+        Return sqlString
+    End Function
 End Class

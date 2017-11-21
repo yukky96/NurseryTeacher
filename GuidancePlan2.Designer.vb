@@ -24,6 +24,7 @@ Partial Class GuidancePlan2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GuidancePlan2))
         Me.Panel = New System.Windows.Forms.Panel()
+        Me.TimeWater = New NurseryTeacher.Watermark()
         Me.Time14 = New System.Windows.Forms.TextBox()
         Me.Time13 = New System.Windows.Forms.TextBox()
         Me.Time12 = New System.Windows.Forms.TextBox()
@@ -106,7 +107,9 @@ Partial Class GuidancePlan2
         Me.LeaderName = New System.Windows.Forms.ComboBox()
         Me.ClassName = New System.Windows.Forms.ComboBox()
         Me.CreationDate = New System.Windows.Forms.DateTimePicker()
+        Me.Watermark1 = New NurseryTeacher.Watermark()
         Me.Concern1 = New System.Windows.Forms.RichTextBox()
+        Me.Watermark2 = New NurseryTeacher.Watermark()
         Me.Concern2 = New System.Windows.Forms.RichTextBox()
         Me.Concern3 = New System.Windows.Forms.RichTextBox()
         Me.Concern4 = New System.Windows.Forms.RichTextBox()
@@ -126,9 +129,6 @@ Partial Class GuidancePlan2
         Me.ASave = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.XEnd = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TimeWater = New NurseryTeacher.Watermark()
-        Me.Watermark1 = New NurseryTeacher.Watermark()
-        Me.Watermark2 = New NurseryTeacher.Watermark()
         Me.Panel.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -241,6 +241,19 @@ Partial Class GuidancePlan2
         Me.Panel.Name = "Panel"
         Me.Panel.Size = New System.Drawing.Size(980, 1169)
         Me.Panel.TabIndex = 0
+        '
+        'TimeWater
+        '
+        Me.TimeWater.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TimeWater.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TimeWater.Location = New System.Drawing.Point(21, 367)
+        Me.TimeWater.Name = "TimeWater"
+        Me.TimeWater.Size = New System.Drawing.Size(55, 16)
+        Me.TimeWater.TabIndex = 0
+        Me.TimeWater.TabStop = False
+        Me.TimeWater.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TimeWater.WatermarkColor = System.Drawing.Color.Gray
+        Me.TimeWater.WatermarkText = "12:00"
         '
         'Time14
         '
@@ -571,7 +584,7 @@ Partial Class GuidancePlan2
         '
         'Note14
         '
-        Me.Note14.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note14.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note14.Location = New System.Drawing.Point(833, 986)
         Me.Note14.Name = "Note14"
         Me.Note14.Size = New System.Drawing.Size(135, 48)
@@ -580,7 +593,7 @@ Partial Class GuidancePlan2
         '
         'Note13
         '
-        Me.Note13.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note13.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note13.Location = New System.Drawing.Point(833, 937)
         Me.Note13.Name = "Note13"
         Me.Note13.Size = New System.Drawing.Size(135, 48)
@@ -589,7 +602,7 @@ Partial Class GuidancePlan2
         '
         'Note12
         '
-        Me.Note12.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note12.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note12.Location = New System.Drawing.Point(833, 889)
         Me.Note12.Name = "Note12"
         Me.Note12.Size = New System.Drawing.Size(135, 48)
@@ -598,7 +611,7 @@ Partial Class GuidancePlan2
         '
         'Note11
         '
-        Me.Note11.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note11.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note11.Location = New System.Drawing.Point(833, 840)
         Me.Note11.Name = "Note11"
         Me.Note11.Size = New System.Drawing.Size(135, 48)
@@ -607,7 +620,7 @@ Partial Class GuidancePlan2
         '
         'Note10
         '
-        Me.Note10.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note10.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note10.Location = New System.Drawing.Point(833, 791)
         Me.Note10.Name = "Note10"
         Me.Note10.Size = New System.Drawing.Size(135, 48)
@@ -616,7 +629,7 @@ Partial Class GuidancePlan2
         '
         'Note9
         '
-        Me.Note9.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note9.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note9.Location = New System.Drawing.Point(833, 742)
         Me.Note9.Name = "Note9"
         Me.Note9.Size = New System.Drawing.Size(135, 48)
@@ -625,7 +638,7 @@ Partial Class GuidancePlan2
         '
         'Note8
         '
-        Me.Note8.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note8.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note8.Location = New System.Drawing.Point(833, 694)
         Me.Note8.Name = "Note8"
         Me.Note8.Size = New System.Drawing.Size(135, 48)
@@ -634,7 +647,7 @@ Partial Class GuidancePlan2
         '
         'Note7
         '
-        Me.Note7.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note7.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note7.Location = New System.Drawing.Point(833, 645)
         Me.Note7.Name = "Note7"
         Me.Note7.Size = New System.Drawing.Size(135, 48)
@@ -643,7 +656,7 @@ Partial Class GuidancePlan2
         '
         'Note6
         '
-        Me.Note6.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note6.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note6.Location = New System.Drawing.Point(833, 597)
         Me.Note6.Name = "Note6"
         Me.Note6.Size = New System.Drawing.Size(135, 48)
@@ -652,7 +665,7 @@ Partial Class GuidancePlan2
         '
         'Note5
         '
-        Me.Note5.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note5.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note5.Location = New System.Drawing.Point(833, 548)
         Me.Note5.Name = "Note5"
         Me.Note5.Size = New System.Drawing.Size(135, 48)
@@ -661,7 +674,7 @@ Partial Class GuidancePlan2
         '
         'Note4
         '
-        Me.Note4.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note4.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note4.Location = New System.Drawing.Point(833, 499)
         Me.Note4.Name = "Note4"
         Me.Note4.Size = New System.Drawing.Size(135, 48)
@@ -670,7 +683,7 @@ Partial Class GuidancePlan2
         '
         'Note3
         '
-        Me.Note3.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note3.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note3.Location = New System.Drawing.Point(833, 450)
         Me.Note3.Name = "Note3"
         Me.Note3.Size = New System.Drawing.Size(135, 48)
@@ -679,7 +692,7 @@ Partial Class GuidancePlan2
         '
         'Note2
         '
-        Me.Note2.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note2.Location = New System.Drawing.Point(833, 402)
         Me.Note2.Name = "Note2"
         Me.Note2.Size = New System.Drawing.Size(135, 48)
@@ -688,7 +701,7 @@ Partial Class GuidancePlan2
         '
         'Note1
         '
-        Me.Note1.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.Note1.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Note1.Location = New System.Drawing.Point(833, 353)
         Me.Note1.Name = "Note1"
         Me.Note1.Size = New System.Drawing.Size(135, 48)
@@ -1040,6 +1053,16 @@ Partial Class GuidancePlan2
         Me.CreationDate.Size = New System.Drawing.Size(160, 19)
         Me.CreationDate.TabIndex = 0
         '
+        'Watermark1
+        '
+        Me.Watermark1.Location = New System.Drawing.Point(566, 355)
+        Me.Watermark1.Multiline = True
+        Me.Watermark1.Name = "Watermark1"
+        Me.Watermark1.Size = New System.Drawing.Size(267, 46)
+        Me.Watermark1.TabIndex = 3
+        Me.Watermark1.WatermarkColor = System.Drawing.Color.Gray
+        Me.Watermark1.WatermarkText = "■子ども同士の挨拶を促す。"
+        '
         'Concern1
         '
         Me.Concern1.ImeMode = System.Windows.Forms.ImeMode.Hiragana
@@ -1048,6 +1071,16 @@ Partial Class GuidancePlan2
         Me.Concern1.Size = New System.Drawing.Size(268, 48)
         Me.Concern1.TabIndex = 13
         Me.Concern1.Text = ""
+        '
+        'Watermark2
+        '
+        Me.Watermark2.Location = New System.Drawing.Point(566, 402)
+        Me.Watermark2.Multiline = True
+        Me.Watermark2.Name = "Watermark2"
+        Me.Watermark2.Size = New System.Drawing.Size(266, 46)
+        Me.Watermark2.TabIndex = 17
+        Me.Watermark2.WatermarkColor = System.Drawing.Color.Gray
+        Me.Watermark2.WatermarkText = "□全体の話の後にもう一度○○くんに確認する。"
         '
         'Concern2
         '
@@ -1204,39 +1237,6 @@ Partial Class GuidancePlan2
         Me.XEnd.Name = "XEnd"
         Me.XEnd.Size = New System.Drawing.Size(190, 22)
         Me.XEnd.Text = "終了(&X)"
-        '
-        'TimeWater
-        '
-        Me.TimeWater.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TimeWater.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TimeWater.Location = New System.Drawing.Point(21, 367)
-        Me.TimeWater.Name = "TimeWater"
-        Me.TimeWater.Size = New System.Drawing.Size(55, 16)
-        Me.TimeWater.TabIndex = 0
-        Me.TimeWater.TabStop = False
-        Me.TimeWater.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.TimeWater.WatermarkColor = System.Drawing.Color.Gray
-        Me.TimeWater.WatermarkText = "12:00"
-        '
-        'Watermark1
-        '
-        Me.Watermark1.Location = New System.Drawing.Point(566, 355)
-        Me.Watermark1.Multiline = True
-        Me.Watermark1.Name = "Watermark1"
-        Me.Watermark1.Size = New System.Drawing.Size(267, 46)
-        Me.Watermark1.TabIndex = 3
-        Me.Watermark1.WatermarkColor = System.Drawing.Color.Gray
-        Me.Watermark1.WatermarkText = "■子ども同士の挨拶を促す。"
-        '
-        'Watermark2
-        '
-        Me.Watermark2.Location = New System.Drawing.Point(566, 402)
-        Me.Watermark2.Multiline = True
-        Me.Watermark2.Name = "Watermark2"
-        Me.Watermark2.Size = New System.Drawing.Size(266, 46)
-        Me.Watermark2.TabIndex = 17
-        Me.Watermark2.WatermarkColor = System.Drawing.Color.Gray
-        Me.Watermark2.WatermarkText = "□全体の話の後にもう一度○○くんに確認する。"
         '
         'GuidancePlan2
         '
