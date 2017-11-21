@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Class1
+Public Class Watermark
     Inherits TextBox
     'Declare A Few Variables
     Dim WaterText As String
@@ -88,5 +88,6 @@ Public Class Class1
         End Set
     End Property
 End Class
+
 
 

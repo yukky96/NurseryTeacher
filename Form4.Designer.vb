@@ -126,9 +126,9 @@ Partial Class GuidancePlan2
         Me.ASave = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.XEnd = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TimeWater = New NurseryTeacher.Class1()
-        Me.Watermark1 = New NurseryTeacher.Class1()
-        Me.Watermark2 = New NurseryTeacher.Class1()
+        Me.TimeWater = New NurseryTeacher.Watermark()
+        Me.Watermark1 = New NurseryTeacher.Watermark()
+        Me.Watermark2 = New NurseryTeacher.Watermark()
         Me.Panel.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -1274,7 +1274,7 @@ Partial Class GuidancePlan2
     Friend WithEvents Environment1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Action1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Concern1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents Watermark1 As NurseryTeacher.Class1
+    Friend WithEvents Watermark1 As NurseryTeacher.Watermark
     Friend WithEvents Note1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Focus1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Time13 As System.Windows.Forms.TextBox
@@ -1355,10 +1355,10 @@ Partial Class GuidancePlan2
     Friend WithEvents Note3 As System.Windows.Forms.RichTextBox
     Friend WithEvents Note2 As System.Windows.Forms.RichTextBox
     Friend WithEvents Reflection As System.Windows.Forms.RichTextBox
-    Friend WithEvents Watermark2 As NurseryTeacher.Class1
+    Friend WithEvents Watermark2 As NurseryTeacher.Watermark
     Friend WithEvents Time14 As System.Windows.Forms.TextBox
     Friend WithEvents Time1 As System.Windows.Forms.TextBox
-    Friend WithEvents TimeWater As NurseryTeacher.Class1
+    Friend WithEvents TimeWater As NurseryTeacher.Watermark
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ファイルFToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SSave As System.Windows.Forms.ToolStripMenuItem

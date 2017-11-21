@@ -22,115 +22,181 @@ Partial Class Login
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Administrator = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Login_btn = New System.Windows.Forms.Button()
-        Me.ID = New System.Windows.Forms.TextBox()
-        Me.Password = New System.Windows.Forms.TextBox()
-        Me.GroupBox1.SuspendLayout()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Watermark2 = New NurseryTeacher.Watermark()
+        Me.Watermark1 = New NurseryTeacher.Watermark()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox1.BackColor = System.Drawing.Color.LightBlue
-        Me.GroupBox1.Controls.Add(Me.Administrator)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Login_btn)
-        Me.GroupBox1.Controls.Add(Me.ID)
-        Me.GroupBox1.Controls.Add(Me.Password)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(259, 237)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
         '
         'Administrator
         '
         Me.Administrator.AutoSize = True
         Me.Administrator.Font = New System.Drawing.Font("メイリオ", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Administrator.Location = New System.Drawing.Point(19, 135)
+        Me.Administrator.Location = New System.Drawing.Point(621, 220)
         Me.Administrator.Name = "Administrator"
         Me.Administrator.Size = New System.Drawing.Size(77, 28)
         Me.Administrator.TabIndex = 6
         Me.Administrator.Text = "管理者"
         Me.Administrator.UseVisualStyleBackColor = True
         '
-        'Label2
+        'PictureBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 75)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 18)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "パスワード"
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(170, 139)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Location = New System.Drawing.Point(395, 106)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(176, 146)
+        Me.Panel1.TabIndex = 2
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Font = New System.Drawing.Font("メイリオ", 13.0!)
+        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button14.Location = New System.Drawing.Point(875, 269)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(118, 48)
+        Me.Button14.TabIndex = 39
+        Me.Button14.Text = "キャンセル"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("メイリオ", 13.0!)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(731, 269)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 48)
+        Me.Button1.TabIndex = 40
+        Me.Button1.Text = "ログイン"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 15)
+        Me.Label1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(476, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(23, 18)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "ID"
+        Me.Label1.Size = New System.Drawing.Size(351, 36)
+        Me.Label1.TabIndex = 41
+        Me.Label1.Text = "なんたらかんたら電子システム"
         '
-        'Login_btn
+        'Label2
         '
-        Me.Login_btn.Font = New System.Drawing.Font("メイリオ", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Login_btn.Location = New System.Drawing.Point(19, 190)
-        Me.Login_btn.Name = "Login_btn"
-        Me.Login_btn.Size = New System.Drawing.Size(225, 41)
-        Me.Login_btn.TabIndex = 2
-        Me.Login_btn.Text = "ログイン"
-        Me.Login_btn.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("メイリオ", 12.0!)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(549, 60)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(190, 24)
+        Me.Label2.TabIndex = 42
+        Me.Label2.Text = "NantaraKantaraSystem"
         '
-        'ID
+        'PictureBox2
         '
-        Me.ID.BackColor = System.Drawing.SystemColors.Window
-        Me.ID.Font = New System.Drawing.Font("メイリオ", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ID.Location = New System.Drawing.Point(18, 36)
-        Me.ID.Multiline = True
-        Me.ID.Name = "ID"
-        Me.ID.Size = New System.Drawing.Size(223, 33)
-        Me.ID.TabIndex = 1
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(621, 123)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(27, 26)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 45
+        Me.PictureBox2.TabStop = False
         '
-        'Password
+        'PictureBox3
         '
-        Me.Password.BackColor = System.Drawing.SystemColors.Window
-        Me.Password.Font = New System.Drawing.Font("メイリオ", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Password.Location = New System.Drawing.Point(19, 96)
-        Me.Password.Multiline = True
-        Me.Password.Name = "Password"
-        Me.Password.Size = New System.Drawing.Size(223, 33)
-        Me.Password.TabIndex = 1
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(621, 172)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(27, 26)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 46
+        Me.PictureBox3.TabStop = False
+        '
+        'Watermark2
+        '
+        Me.Watermark2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Watermark2.Location = New System.Drawing.Point(647, 172)
+        Me.Watermark2.Name = "Watermark2"
+        Me.Watermark2.Size = New System.Drawing.Size(346, 26)
+        Me.Watermark2.TabIndex = 44
+        Me.Watermark2.WatermarkColor = System.Drawing.Color.Gray
+        Me.Watermark2.WatermarkText = "PassWord"
+        '
+        'Watermark1
+        '
+        Me.Watermark1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Watermark1.Location = New System.Drawing.Point(647, 123)
+        Me.Watermark1.Name = "Watermark1"
+        Me.Watermark1.Size = New System.Drawing.Size(346, 26)
+        Me.Watermark1.TabIndex = 43
+        Me.Watermark1.WatermarkColor = System.Drawing.Color.Gray
+        Me.Watermark1.WatermarkText = "UserID"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.LightBlue
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1362, 371)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Watermark2)
+        Me.Controls.Add(Me.Watermark1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.Administrator)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.Text = "ログイン"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Password As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Administrator As System.Windows.Forms.CheckBox
-    Friend WithEvents ID As System.Windows.Forms.TextBox
-    Friend WithEvents Login_btn As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Button14 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Watermark1 As NurseryTeacher.Watermark
+    Friend WithEvents Watermark2 As NurseryTeacher.Watermark
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
 End Class
