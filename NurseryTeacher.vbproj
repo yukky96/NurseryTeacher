@@ -87,10 +87,10 @@
     <Compile Include="TeacherEdit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuidancePlan2.Designer.vb">
-      <DependentUpon>GuidancePlan2.vb</DependentUpon>
+    <Compile Include="GuidancePlan.Designer.vb">
+      <DependentUpon>GuidancePlan.vb</DependentUpon>
     </Compile>
-    <Compile Include="GuidancePlan2.vb">
+    <Compile Include="GuidancePlan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form5.Designer.vb">
@@ -125,8 +125,8 @@
     <EmbeddedResource Include="TeacherEdit.resx">
       <DependentUpon>TeacherEdit.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuidancePlan2.resx">
-      <DependentUpon>GuidancePlan2.vb</DependentUpon>
+    <EmbeddedResource Include="GuidancePlan.resx">
+      <DependentUpon>GuidancePlan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.vb</DependentUpon>

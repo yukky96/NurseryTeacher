@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class GuidancePlan2
+Partial Class GuidancePlan
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
@@ -22,7 +22,7 @@ Partial Class GuidancePlan2
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GuidancePlan2))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GuidancePlan))
         Me.Panel = New System.Windows.Forms.Panel()
         Me.TimeWater = New NurseryTeacher.Watermark()
         Me.Time14 = New System.Windows.Forms.TextBox()
@@ -1238,7 +1238,7 @@ Partial Class GuidancePlan2
         Me.XEnd.Size = New System.Drawing.Size(190, 22)
         Me.XEnd.Text = "終了(&X)"
         '
-        'GuidancePlan2
+        'GuidancePlan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1249,7 +1249,7 @@ Partial Class GuidancePlan2
         Me.Controls.Add(Me.Panel)
         Me.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "GuidancePlan2"
+        Me.Name = "GuidancePlan"
         Me.Text = "指導案"
         Me.Panel.ResumeLayout(False)
         Me.Panel.PerformLayout()

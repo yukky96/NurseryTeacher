@@ -1,4 +1,4 @@
-﻿Public Class GuidancePlan2
+﻿Public Class GuidancePlan
 
     Private Sub CheckTime(timectl As TextBox)
         'MsgBox関数に使う変数を宣言。
