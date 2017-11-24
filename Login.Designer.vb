@@ -26,14 +26,14 @@ Partial Class Login
         Me.Administrator = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Cancel = New System.Windows.Forms.Button()
+        Me.btn_login = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Watermark2 = New NurseryTeacher.Watermark()
-        Me.Watermark1 = New NurseryTeacher.Watermark()
+        Me.Password = New NurseryTeacher.Watermark()
+        Me.UserID = New NurseryTeacher.Watermark()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,33 +69,34 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(176, 146)
         Me.Panel1.TabIndex = 2
         '
-        'Button14
+        'Cancel
         '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Font = New System.Drawing.Font("メイリオ", 13.0!)
-        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button14.Location = New System.Drawing.Point(875, 269)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(118, 48)
-        Me.Button14.TabIndex = 39
-        Me.Button14.Text = "キャンセル"
-        Me.Button14.UseVisualStyleBackColor = False
+        Me.Cancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Cancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Cancel.Font = New System.Drawing.Font("メイリオ", 13.0!)
+        Me.Cancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Cancel.Location = New System.Drawing.Point(875, 269)
+        Me.Cancel.Name = "Cancel"
+        Me.Cancel.Size = New System.Drawing.Size(118, 48)
+        Me.Cancel.TabIndex = 39
+        Me.Cancel.Text = "キャンセル"
+        Me.Cancel.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btn_login
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("メイリオ", 13.0!)
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(731, 269)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(118, 48)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "ログイン"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btn_login.BackColor = System.Drawing.Color.White
+        Me.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_login.Font = New System.Drawing.Font("メイリオ", 13.0!)
+        Me.btn_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btn_login.Location = New System.Drawing.Point(731, 269)
+        Me.btn_login.Name = "btn_login"
+        Me.btn_login.Size = New System.Drawing.Size(118, 48)
+        Me.btn_login.TabIndex = 40
+        Me.btn_login.Text = "ログイン"
+        Me.btn_login.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -139,41 +140,43 @@ Partial Class Login
         Me.PictureBox3.TabIndex = 46
         Me.PictureBox3.TabStop = False
         '
-        'Watermark2
+        'Password
         '
-        Me.Watermark2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.Watermark2.Location = New System.Drawing.Point(647, 172)
-        Me.Watermark2.Name = "Watermark2"
-        Me.Watermark2.Size = New System.Drawing.Size(346, 26)
-        Me.Watermark2.TabIndex = 44
-        Me.Watermark2.WatermarkColor = System.Drawing.Color.Gray
-        Me.Watermark2.WatermarkText = "PassWord"
+        Me.Password.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Password.Location = New System.Drawing.Point(647, 172)
+        Me.Password.Name = "Password"
+        Me.Password.Size = New System.Drawing.Size(346, 26)
+        Me.Password.TabIndex = 44
+        Me.Password.WatermarkColor = System.Drawing.Color.Gray
+        Me.Password.WatermarkText = "PassWord"
         '
-        'Watermark1
+        'UserID
         '
-        Me.Watermark1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.Watermark1.Location = New System.Drawing.Point(647, 123)
-        Me.Watermark1.Name = "Watermark1"
-        Me.Watermark1.Size = New System.Drawing.Size(346, 26)
-        Me.Watermark1.TabIndex = 43
-        Me.Watermark1.WatermarkColor = System.Drawing.Color.Gray
-        Me.Watermark1.WatermarkText = "UserID"
+        Me.UserID.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.UserID.Location = New System.Drawing.Point(647, 123)
+        Me.UserID.Name = "UserID"
+        Me.UserID.Size = New System.Drawing.Size(346, 26)
+        Me.UserID.TabIndex = 43
+        Me.UserID.WatermarkColor = System.Drawing.Color.Gray
+        Me.UserID.WatermarkText = "UserID"
         '
         'Login
         '
+        Me.AcceptButton = Me.btn_login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(1362, 371)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Watermark2)
-        Me.Controls.Add(Me.Watermark1)
+        Me.Controls.Add(Me.Password)
+        Me.Controls.Add(Me.UserID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.btn_login)
+        Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.Administrator)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -190,12 +193,12 @@ Partial Class Login
     Friend WithEvents Administrator As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Cancel As System.Windows.Forms.Button
+    Friend WithEvents btn_login As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Watermark1 As NurseryTeacher.Watermark
-    Friend WithEvents Watermark2 As NurseryTeacher.Watermark
+    Friend WithEvents UserID As NurseryTeacher.Watermark
+    Friend WithEvents Password As NurseryTeacher.Watermark
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
